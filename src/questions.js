@@ -1,12 +1,12 @@
 const managerQuestions = [{
     type: 'input',
     name: 'name',
-    message: 'What is your name?',
+    message: 'What is your managers name?',
     validate: nameInput => {
         if (nameInput) {
           return true;
         } else {
-          console.log('Please enter your name!');
+          console.log('Please enter your managers name!');
           return false;
         }
     }
@@ -139,19 +139,6 @@ const engineerQuestions = [{
           return true;
         } else {
           console.log('Please enter your email!');
-          return false;
-        }
-    }
-},
-{
-    type: 'input',
-    name: 'officeNumber',
-    message: 'What is your office number?',
-    validate: nameInput => {
-        if (nameInput) {
-          return true;
-        } else {
-          console.log('Please enter your office number!');
           return false;
         }
     }
